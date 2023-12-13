@@ -1,0 +1,422 @@
+body{
+    background-color: rgb(57, 55, 55);
+}
+.font-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: auto;
+    width: 300%;
+}
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    height: 90vh !important;
+}
+.imagenes{
+    height: auto;
+    width: 100%;
+}
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* VERSIÓN MÓVIL */
+
+@media (max-width: 850px) {
+
+    .imagenes{
+        height: 100vh;
+    }
+    #menu{
+        width: 100%;
+        max-height: 10vh;
+        background-color: rgb(57, 55, 55);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5%;
+    }
+    i{
+        color: rgb(231, 220, 157);
+        font-size: 2.5rem;
+    }
+    #off-canvas{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(57, 55, 55);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .menuArriba{
+        width: 100%;
+        height: 20%;
+        padding: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .menuCentro{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menuCentro div{
+        width: 100%;
+        height: 20%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+    }
+    .menuAbajo{
+        width: 100%;
+        height: 15%;
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .menuAbajo div{
+        height: 50%;
+        padding: 5%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:1.3rem;
+    }
+    .linkGolden{
+        color: rgb(231, 220, 157) !important;
+    }
+    a:not(.seccion, .boton){
+        text-decoration: none !important;
+        color: rgb(231, 220, 157) !important;
+    }
+    .seccion{
+        color: white;
+        text-decoration: none;
+    }
+    .telefono{
+        text-decoration: none;
+    }
+    #sobrenosotros{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(57, 55, 55);
+        color: white;
+        margin-top: -1%;
+    }
+    #sobrenosotros div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobrenosotros div img{
+        height: 100%;
+    }
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h2{
+        font-size: 0.9rem !important;
+        color: rgb(231, 220, 157) !important;
+        text-transform: uppercase;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3{
+        font-size: 0.9rem !important;
+        text-transform: uppercase;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+    }
+    #tartas{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(57, 55, 55);
+        color: white;
+        padding-bottom: 5%;
+    }
+    #tartas div:not(.boton){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divCards{
+        display: flex;
+        justify-content: flex-end !important;
+        align-items: flex-end !important;
+        flex-direction: column-reverse;
+    }
+    swiper-container {
+        width: 45%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        width: 110% !important;
+      }
+  
+      swiper-slide:nth-child(1n) {
+        background-image: url("./img/tarta.png");
+        background-size: cover;
+        background-position-x: 45%;
+      }
+  
+      swiper-slide:nth-child(2n) {
+        background-image: url("./img/tartaAvengers.png");
+        background-size: cover;
+        background-position-x: 45%;
+      }
+  
+      swiper-slide:nth-child(3n) {
+        background-image: url("./img/tartaAzul.png");
+        background-size: cover;
+        background-position-x: 45%;
+      }
+  
+      swiper-slide:nth-child(4n) {
+        background-image: url("./img/tartaChocolate.png");
+        background-size: cover;
+        background-position-x: 45%;
+      }
+  
+      swiper-slide:nth-child(5n) {
+        background-image: url("./img/tartaCinturonPapaNoel.jpg");
+        background-size: cover;
+        background-position-x: 45%;
+      }
+      .boton{
+        width: 70%;
+        height: auto;
+        background-color: rgb(231, 220, 157);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgb(57, 55, 55);
+        text-decoration: none;
+      }
+      .boton{
+        color: rgb(57, 55, 55) !important;
+      }
+      .boton:hover{
+        background-color: rgb(57, 55, 55);
+        color: rgb(231, 220, 157) !important;
+        border: 3px solid rgb(231, 220, 157);
+        }
+      #pasteles{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(57, 55, 55);
+        color: white;
+        margin-top: -1%;
+    }
+    #pasteles div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ubicacion{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(57, 55, 55);
+        color: white;
+        margin-top: -1%;
+        padding-bottom: 10%;
+    }
+    #ubicacion div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #encargos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(231, 220, 157);
+        color: rgb(57, 55, 55);
+        margin-top: -1%;
+        padding-bottom: 7%;
+    }
+    .divEncargos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divEncargos a{
+        width: 100%;
+        padding-left: 5%;
+        display: flex ;
+        align-items: center;
+        justify-content: start;
+        color: rgb(57, 55, 55)!important;
+        font-size: 1.3rem;
+    }
+    #encargos div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .encargos{
+        color: rgb(57, 55, 55) !important;
+    }
+    #creditos{
+        background-color: rgb(57, 55, 55);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1%;
+        color: white;
+        font-size: 0.8rem;
+        padding-top: 3%;
+    }
+    #marcaagua{
+        width: 35%;
+        height: 15%;
+        background-image: url("./img/Marca\ de\ Agua\ CM.png");
+        background-size: cover;
+        position: fixed;
+        top: 80%;
+        left: 60%;
+        z-index: 9999;
+    }
+}

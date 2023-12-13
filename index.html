@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <title>A Punto De Caramelo - Pastelería en Marbella</title>
+</head>
+<body id="body">
+
+    <!-- MENU SUPERIOR -->
+    <div id="menu">
+        <div class="d-flex align-items-center">
+            <img class="me-3" style="height: 3rem;" src="./img/logo.jpg" alt="">
+            <span class="text-white font-text fs-4">A Punto De Caramelo</span>
+        </div>
+        <div>
+            <i id="burger" class="bi bi-list"></i>
+        </div>
+    </div>
+
+    <!-- CARRUSEL FOTOS -->
+    <div id="carrusel-contenido">
+        <div id="carrusel-caja">
+            <div class="carrusel-elemento">
+                <img class="imagenes" src="./img/pasteles.png" >
+            </div>
+            <div class="carrusel-elemento">   
+                <img class="imagenes" src="./img/tartaEsmoquin.png">
+            </div>
+            <div class="carrusel-elemento">   
+                <img class="imagenes" src="./img/tarta.png">                        
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU OFF-CANVAS -->
+    <div id="off-canvas">
+
+        <div class="menuArriba">
+            <div>
+                <i id="cerrar" class="bi bi-x-lg"></i>
+            </div>
+            <div>
+                <img style="width: 5rem;" src="./img/logo.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="menuCentro">
+            <div>
+                <a href="#sobrenosotros" class="font-text seccion">Sobre Nosotros</a>
+            </div>
+            <div>
+                <a href="#tartas" class="font-text seccion">Tartas</a>
+            </div>
+            <div>
+                <a href="#pasteles" class="font-text seccion">Pasteles</a>
+            </div>
+            <div>
+                <a href="#ubicacion" class="font-text seccion">Ubicación</a>
+            </div>
+            <div>
+                <a href="#encargos" class="font-text seccion">Encargos</a>
+            </div>
+        </div>
+
+        <div class="menuAbajo">
+            <div>
+                <a class="instagram font-text linkGolden" href="https://www.instagram.com/apuntodecaramelo_/"><i class="bi bi-instagram"></i> &nbsp;@apuntodecaramelo_</a>
+            </div>
+            <div>
+                <a class="" href=""><i class="bi bi-telephone"></i> <b class="telefono font-text linkGolden">678 543 321</b></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SOBRE NOSOTROS -->
+    <div id="sobrenosotros">
+        
+        <div class="d-flex flex-column mb-3" style="height: 10%;">
+            <h1 class="pt-5">Pastelería en Marbella</h1>
+            <h2>A Punto De Caramelo</h2>
+        </div>
+
+        <div class="mb-3" style="height: 35%;">
+            <p class="px-3 text-center font-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In optio dolores, recusandae culpa dolor laborum labore alias quia, adipisci quis, voluptatibus officiis? Repellendus quasi vero harum! Porro voluptatum nemo officiis!</p>
+        </div>
+
+        <div style="height: 55%;">
+            <img style="width: 100%;" src="./img/tartaUnicornio.jpg" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- TARTAS -->
+    <div id="tartas" class="pt-4">
+        
+        <div class="d-flex flex-column" style="height: 10%;">
+            <h1 class="pt-5">Tartas</h1>
+            <h2>De la mejor calidad y personalizadas</h2>
+        </div>
+
+        <div style="height: 25%;">
+            <p class="px-3 text-center font-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In optio dolores, recusandae culpa dolor laborum labore alias quia, adipisci quis, voluptatibus officiis? Repellendus quasi vero harum! Porro voluptatum nemo officiis!</p>
+        </div>
+
+        <div class="divCards" style="height: 55%;">
+            <swiper-container class="mySwiper" effect="cards" slides-per-view="1" grab-cursor="true">
+                <swiper-slide></swiper-slide>
+                <swiper-slide></swiper-slide>
+                <swiper-slide></swiper-slide>
+                <swiper-slide></swiper-slide>
+              </swiper-container>
+        </div>
+
+        <div>
+            <a href="#encargos" class="font-text boton">Encargar Tarta</a>
+        </div>
+
+    </div>
+
+
+    <!-- PASTELES -->
+    <div id="pasteles" class="pt-4">
+        
+        <div class="d-flex flex-column mb-3" style="height: 10%;">
+            <h1 class="pt-5">Pasteles y Dulces</h1>
+            <h2>Infinitas variedades</h2>
+        </div>
+
+        <div class="mb-3" style="height: 35%;">
+            <p class="px-3 text-center font-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In optio dolores, recusandae culpa dolor laborum labore alias quia, adipisci quis, voluptatibus officiis? Repellendus quasi vero harum! Porro voluptatum nemo officiis!</p>
+        </div>
+
+        <div style="height: 55%;">
+            <img style="width: 100%;" src="./img/pasteles2.png" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- UBICACIÓN -->
+    <div id="ubicacion" class="pt-4">
+        
+        <div class="d-flex flex-column mb-3" style="height: 10%;">
+            <h1 class="pt-5">Ubicación</h1>
+            <h2>Ven a visitarnos</h2>
+        </div>
+
+        <div class="mb-3" style="height: 35%;">
+            <p class="px-3 text-center font-text">Nos encontramos en el Casco Antiguo de Marbella. Una localización única y exclusiva por su cercanía al centro histórico de la ciudad y del famoso paseo marítimo de Marbella. Ven a nuestro local en Plaza Puente de Málaga, 2, Marbella y ponle algo de dulzor a tu vida.</p>
+        </div>
+
+        <div style="height: 55%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.588216757921!2d-4.885756000641337!3d36.51064394908369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d9265b8db37b%3A0xc04c47378e1fbbb4!2sPasteler%C3%ADa%20A%20punto%20de%20caramelo!5e0!3m2!1ses!2ses!4v1702479292618!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="mt-5">
+            <a href="https://www.google.com/maps/dir/36.507742,-4.915957/a+punto+de+caramelo/@36.5132574,-4.9197788,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd72d9265b8db37b:0xc04c47378e1fbbb4!2m2!1d-4.8826554!2d36.5100401?entry=ttu" class="font-text boton">Cómo llegar</a>
+        </div>
+
+    </div>
+
+
+    <!-- ENCARGOS -->
+    <div id="encargos" class="pt-4">
+        
+        <div class="d-flex flex-column mb-3" style="height: 10%;">
+            <h1 class="pt-2">Encargos</h1>
+            <h3 style="color: rgb(57, 55, 55);">A su gusto</h2>
+        </div>
+
+        <div class="mb-3" style="height: 35%;">
+            <p class="px-3 text-center font-text">Realiza tus pedidos escribiéndonos a nuestro correo electrónico, mensaje directo en Instagram o llamada telefónica. <br>Esperamos con gusto su pedido para realizarlo con la máxima prontitud y delicadeza.</p>
+        </div>
+
+        <div style="height: 55%;">
+            <div class="divEncargos">
+                <a><i class="bi bi-envelope encargos me-3 font-text"></i> apuntodecaramelo@gmail.com</a>
+            </div>
+            <div class="divEncargos">
+                <a><i class="bi bi-telephone encargos me-3 font-text"></i> 678 654 123</a> 
+            </div>
+            <div class="divEncargos">
+                <a href="https://www.instagram.com/apuntodecaramelo_/"><i class="bi bi-instagram encargos me-3 font-text"></i> apuntodecaramelo_</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CREDITOS -->
+    <div id="creditos">
+        <p>Diseñado y construido por <a href="https://carlosmansoperez.github.io/Portfolio/">Carlos Manso</a></p>
+    </div>
+
+
+    <a href="https://carlosmansoperez.github.io/Portfolio/"><div id="marcaagua"></div></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+        document.getElementById("burger").addEventListener("click", abrirMenu);
+        var menu = document.getElementById("off-canvas");
+        var body = document.getElementById("body");
+
+        function abrirMenu(){
+            menu.style.display = "flex";
+            body.style.overflow = "hidden";
+        }
+
+        document.getElementById("cerrar").addEventListener("click", cerrarMenu);
+
+        function cerrarMenu(){
+            menu.style.display = "none";
+            body.style.overflow = "visible";
+        }
+
+        var enlacesMenu = document.getElementsByClassName("seccion");
+        for (var i = 0; i < enlacesMenu.length; i++) {
+            enlacesMenu[i].addEventListener("click", cerrarMenu);
+        }
+    </script>
+
+</body>
+</html>
